@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <RelativeLayout
+		android:id="@+id/addCamPreview"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+
+        <FrameLayout
+	       android:id="@+id/cumshot"
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent"
+	       android:layout_weight="1" >
+
+   		</FrameLayout>
+   		<ImageView
+           android:id="@+id/previewImage"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="#ffffff" 
+           android:visibility="gone"
+           android:adjustViewBounds="false"/>
+	</RelativeLayout>
+	
+	<RelativeLayout
+		android:id="@+id/buttonLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+   		<RelativeLayout
+	    	android:id="@+id/createTextLayout"
+	      	android:layout_width="match_parent"
+	      	android:layout_height="match_parent">
+	      	
+	        <FrameLayout
+	         android:id="@+id/createTextFrame"
+	         android:layout_width="match_parent"
+	         android:layout_height="match_parent"
+	         android:layout_weight="1"/>
+	      	<ImageView
+	                 android:id="@+id/test"
+	                 android:layout_width="match_parent"
+	                 android:layout_height="match_parent"
+	            	 android:visibility="gone"
+	                 android:background="#ffffff" 
+	                 android:adjustViewBounds="false"/>
+	      	
+		    <LinearLayout 
+				android:id="@+id/picLayout"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:padding="0dp"
+			    android:orientation="horizontal">
+			    <LinearLayout
+					android:id="@+id/top"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:layout_weight="1">
+					    <ImageView
+				           android:id="@+id/cumPreviewBack"
+				           android:layout_width="match_parent"
+				           android:layout_height="match_parent"
+				           android:src="@drawable/previewback"
+				           android:background="#ffffff" 
+				           android:adjustViewBounds="false"/>
+			    </LinearLayout>
+				<LinearLayout
+					android:id="@+id/bottom"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:layout_weight="1">
+					<ImageView
+			           android:id="@+id/cumPreviewFront"
+			           android:layout_width="match_parent"
+			           android:layout_height="match_parent"
+			           android:src="@drawable/previewfront" 
+			           android:background="#ffffff"
+			           android:adjustViewBounds="false"
+			           />  
+		        </LinearLayout>
+			</LinearLayout>
+		</RelativeLayout>
+		
+		<ImageView
+           android:id="@+id/smileyButton"
+           android:layout_width="60dp"
+           android:layout_height="60dp"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:src="@drawable/shoot"
+           />
+		
+		<LinearLayout 
+		    android:id="@+id/utilityButtonLayout"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true">
+		
+		    <ImageView
+		        android:id="@+id/shareButton"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:src="@drawable/share2" 
+		        android:clickable="false"/>
+		    <ImageView
+		        android:id="@+id/saveButton"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:src="@drawable/save2" 
+		        android:clickable="false"/>
+		    <ImageView
+		        android:id="@+id/textButton"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:src="@drawable/text2" 
+		        android:clickable="false"/>
+		    <ImageView
+		        android:id="@+id/blankButton"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"
+		        android:clickable="false"/>
+		    <ImageView
+		        android:id="@+id/retryButton"
+		        android:layout_width="50dp"
+		        android:layout_height="50dp"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:src="@drawable/retry1" 
+		        android:clickable="false"/>
+		</LinearLayout>
+	</RelativeLayout>
+
+	<ImageView
+	    android:id="@+id/retakeback"
+	    android:layout_width="100dp"
+	    android:layout_height="80dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:visibility="gone"
+	    android:src="@drawable/previewback2" />
+	
+	<ImageView
+           android:id="@+id/retakefront"
+           android:layout_width="100dp"
+           android:layout_height="80dp"
+           android:layout_alignParentRight="true"
+	       android:layout_centerVertical="true"
+	       android:visibility="gone"
+           android:src="@drawable/previewfront2"
+           
+           />
+   
+</RelativeLayout>
